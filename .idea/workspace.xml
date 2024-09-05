@@ -9,10 +9,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0300c00b-db84-4385-ba0e-db911c09a37c" name="Changes" comment="init">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeido/rest/CarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeido/rest/CarResource.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeido/rest/services/CarService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeido/rest/services/CarService.java" afterDir="false" />
+    <list default="true" id="0300c00b-db84-4385-ba0e-db911c09a37c" name="Changes" comment="Fix resource and clean service">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/jeido/rest/resources/CarResponse.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/jeido/rest/CarResource.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/jeido/rest/resources/CarResource.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -143,7 +142,7 @@
       <option name="presentableId" value="Default" />
       <updated>1725452176738</updated>
       <workItem from="1725452177766" duration="4283000" />
-      <workItem from="1725520453849" duration="3249000" />
+      <workItem from="1725520453849" duration="4150000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -153,7 +152,23 @@
       <option name="project" value="LOCAL" />
       <updated>1725461593220</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Fix resource and clean service">
+      <option name="closed" value="true" />
+      <created>1725523751180</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1725523751180</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Fix resource and clean service">
+      <option name="closed" value="true" />
+      <created>1725523767610</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1725523767610</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -161,6 +176,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init" />
-    <option name="LAST_COMMIT_MESSAGE" value="init" />
+    <MESSAGE value="Fix resource and clean service" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fix resource and clean service" />
   </component>
 </project>

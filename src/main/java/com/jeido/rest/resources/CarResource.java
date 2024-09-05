@@ -1,4 +1,4 @@
-package com.jeido.rest;
+package com.jeido.rest.resources;
 
 import com.jeido.rest.entities.Car;
 import com.jeido.rest.services.CarService;
