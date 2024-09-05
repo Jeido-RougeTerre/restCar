@@ -16,7 +16,6 @@ public class CarResource {
     @Inject
     public CarResource(CarService carService) {
         this.carService = carService;
-
     }
 
     
@@ -27,9 +26,9 @@ public class CarResource {
     }
     
     @GET
-    @Path("{id}")
+    @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Car getCar(@QueryParam("id") int id) {
+    public Car getCar(@PathParam("id") int id) {
         return carService.getCar(id);
     }
     
@@ -40,15 +39,16 @@ public class CarResource {
         return carService.save(car.getModel(), car.getYear(), car.getColor());        
     }
     
-    @POST
-    @Path("{id}{name}{year}{color}")
+    @PUT
+    @Path("/{id}")
     @Produces(MediaType.APPLICATION_JSON)
-    public Car updateCar(@QueryParam("id") int id, @QueryParam("model") String model, @QueryParam("year") int year, @QueryParam("color") String color) {
-        return carService.update(id, model, year, color);
+    @Consumes(MediaType.APPLICATION_JSON)
+    public Car updateCar(@PathParam("id") int id, Car car) {
+        return carService.update(id, car.getModel(), car.getYear(), car.getColor());
     }
     
     @DELETE
-    @Path("{id}")
+    @Path("/{id}")
     public int deleteCar(@PathParam("id") int id) {
         return carService.delete(id)? id : -1;
     }

@@ -8,7 +8,7 @@ import java.util.List;
 
 @ApplicationScoped
 public class CarService {
-    private List<Car> cars;
+    private final List<Car> cars;
 
     public CarService() {
         cars = new ArrayList<Car>();
@@ -27,7 +27,7 @@ public class CarService {
     }
 
     public Car getCar(int id) {
-        return cars.get(id);
+        return cars.stream().filter( car -> car.getId() == id).findFirst().orElse(null);
     }
 
     public List<Car> getCars() {
